@@ -14,6 +14,10 @@ services:
     restart: always
     ports:
       - 3000:3000
+    environment:
+      - AWS_ACCESS_KEY_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXX
+      - AWS_SECRET_ACCESS_KEY=XXXXXXXXXXXXXXXXXXXX
+      - AWS_DEFAULT_REGION=XXXXXXXXXXXX
     volumes:
 #      - ./config.json:/etc/semaphore/config.json
       - ./semaphore_data:/app
